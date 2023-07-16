@@ -3,4 +3,25 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+
+    //Colores abreviados, solo se acepta si todas las parejas son repetidas
+
+    <color name="negro">#000</color>
+    <color name="blacno">#FFF</color>
+    <color name="azul">#00F</color>
+    <color name="verde">#0F0</color>
+    <color name="rojo">#F00</color>
+
+    //Colores con transparencia, los dos primeros dígitos constituyen al canal alpha que determina la opacidad del color
+
+    <color name="black_trans">#AA000000</color>
+    <color name="white_trans">#AAFFFFFF</color>
+    <color name="blue_trans">#AA0000FF</color>
+    <color name="green_trans">#AA00FF00</color>
+    <color name="red_trans">#AAFF0000</color>
+
+
+
 </resources>
