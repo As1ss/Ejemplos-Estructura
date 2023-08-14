@@ -8,15 +8,26 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/ejemploLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ejemplo"
         android:textColor="@color/white"
-        android:textSize="25dp"
-        android:fontFamily="@font/lugrasimo"
+        android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="Name: "
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="267dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
