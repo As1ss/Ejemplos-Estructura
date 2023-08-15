@@ -5,21 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/ejemploLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ejemplo"
         android:textColor="@color/white"
-        android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.902" />
+
 
     <EditText
         android:id="@+id/ejemploEditText"
@@ -34,88 +35,151 @@
         android:padding="10dp"
         android:textColorHighlight="@color/green"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="7dp" />
+        tools:layout_editor_absoluteY="-2dp" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
         android:ems="10"
+        android:hint="textPassword"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="56dp" />
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
         android:ems="10"
+        android:hint="numberPassword"
         android:inputType="numberPassword"
+        android:padding="10dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="108dp" />
+        tools:layout_editor_absoluteY="58dp" />
 
     <EditText
         android:id="@+id/editTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="textEmailAddress"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="169dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="phone"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="phone"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="171dp" />
 
     <EditText
         android:id="@+id/editTextPostalAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="textPostalAddress"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="282dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="226dp" />
 
     <EditText
         android:id="@+id/editTextMultiLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="textMultiLine"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="346dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="285dp" />
 
     <EditText
         android:id="@+id/editTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="time"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="time"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="409dp" />
+        tools:layout_editor_absoluteY="343dp" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="date"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="date"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="471dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="410dp" />
 
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="number"
+        android:background="@drawable/et_style_background"
+        android:padding="10dp"
         android:inputType="number"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="533dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
+        android:ems="10"
+        android:hint="numerSigned"
+        android:inputType="numberSigned"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
+        android:ems="10"
+        android:hint="numberDecimal"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
+        android:hint="AutoCompleteTextView"
+        android:padding="10dp" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style_background"
+        android:hint="MultiAutoCompleteTextView"
+        android:padding="10dp" />
 
 </LinearLayout>

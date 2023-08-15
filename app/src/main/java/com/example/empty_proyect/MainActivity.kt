@@ -8,7 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import android.widget.EditText
+import android.widget.MultiAutoCompleteTextView
+import android.widget.MultiAutoCompleteTextView.CommaTokenizer
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
@@ -30,13 +34,13 @@ class MainActivity : AppCompatActivity() {
 
         //Ejecutamos el método apply para poder agregar o manipular atributos del objeto de forma más ordenada y concisa.
         ejemploLabel.apply {
-            this.text = "Pulsa aquí"
-            setTextColor(Color.YELLOW)
-            setBackgroundColor(Color.BLACK)
+            this.text = "Views"
+
+            setBackgroundColor(Color.CYAN)
             setTypeface(Typeface.MONOSPACE, Typeface.BOLD)
-            setTextSize(3, 35f)
+            setTextSize(3, 15f)
             textAlignment = View.TEXT_ALIGNMENT_CENTER
-            this.setTextColor(Color.YELLOW)
+            this.setTextColor(Color.BLACK)
         }
         /*
          Agregamos el evento de pulsado, si un usuario pulsa sobre este label se reproducirá el sonido
@@ -64,11 +68,34 @@ class MainActivity : AppCompatActivity() {
             Puedes seleccionar los caracteres que veas conveniente para poder personalizar por ejemplo el background de lo seleccionado de un color determinado
             en el documento XML con la propiedad  android:textColorHighlight="@color/green"
            */
-             setOnClickListener { this.selectAll()}
+
 
             }
 
         }
+
+        //Instanciamos el campo de texto editable de autocompletado
+        val autoCompleteTextView:AutoCompleteTextView = findViewById(R.id.autoCompleteTextView)
+
+        //Creamos un array a partir de los recursos que tenemos almacenados en un documento XML.
+        val countries:Array<String> = resources.getStringArray(R.array.countries_array)
+
+        //Creamos un adaptador para mostrar el autocompletado de los paises con un diseño específico que escogemos en el constructor de ArrayAdapter
+        val adapterView:ArrayAdapter<String> = ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,countries)
+
+        //Añadimos al campo de texto editable de autocompletado nuestro adaptadorView para poder mostrar la configuración anteriormente definida
+        autoCompleteTextView.setAdapter(adapterView)
+
+
+        //Instanciamos el campo de texto editable de autocompletado múltimple (sirve para ayudar al usuario con varios valores en vez de uno solo)
+        val multiAutoCompleteTextView: MultiAutoCompleteTextView = findViewById(R.id.multiAutoCompleteTextView)
+
+        //Añadimos el adaptador anteriormente definido junto al array de countries
+        multiAutoCompleteTextView.setAdapter(adapterView)
+
+        //Establecemos un delimitador para que el compilador sepa cada cuanto ayudar al usuario con el autocompletado (autocompletado múltiple)
+        multiAutoCompleteTextView.setTokenizer(CommaTokenizer())
+
 
     }
 }
