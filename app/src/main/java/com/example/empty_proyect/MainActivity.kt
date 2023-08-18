@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
 
         ejemploLabel.setOnClickListener {
             mediaPlayer.start()
+
             Toast.makeText(this, "Has eruptadolf ${contador++} veces.", Toast.LENGTH_SHORT).show()
         }
 
