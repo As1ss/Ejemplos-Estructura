@@ -5,14 +5,22 @@
     <color name="blue">#0000FF</color>
     <color name="green">#00FF00</color>
     <color name="red">#FF0000</color>
+    <color name="gray">#999999</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FF00FF</color>
+    <color name="orange">#FFB533</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue_dark">#0360bd</color>
+    <color name="blue_light">#cce3fb</color>
 
     //Colores abreviados, solo se acepta si todas las parejas son repetidas
-
+<!--
     <color name="negro">#000</color>
-    <color name="blacno">#FFF</color>
+    <color name="blanco">#FFF</color>
     <color name="azul">#00F</color>
     <color name="verde">#0F0</color>
     <color name="rojo">#F00</color>
+    -->
 
     //Colores con transparencia, los dos primeros dígitos constituyen al canal alpha que determina la opacidad del color
 

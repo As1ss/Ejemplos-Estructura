@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,18 +11,58 @@
         android:orientation="vertical">
 
         <android.widget.Button
+            android:id="@+id/buttonGradient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:background="@color/green"
-            android:backgroundTint="@color/blue_trans"
+            android:layout_margin="10dp"
+            android:background="@drawable/gradient"
             android:drawableStart="@drawable/baseline_email_24"
-            android:gravity="center"
-            android:text="Iniciar sesión"
+            android:text="Button"
             android:textColor="@color/black">
-
         </android.widget.Button>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_email_24"
+            android:backgroundTint="@color/green"/>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking"
+                style="@style/chEntry"
+                app:chipIcon="@drawable/ic_car"
+                />
+
+            <com.google.android.material.chip.Chip
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chEntry"
+                android:text="Balcón" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chEntry"
+                android:text="2 baños" />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chEntry"
+                android:text="Piscina" />
+
+        </com.google.android.material.chip.ChipGroup>
 
 
     </LinearLayout>
