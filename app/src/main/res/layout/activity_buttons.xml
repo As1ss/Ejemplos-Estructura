@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <android.widget.Button
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/orange"
                 android:checked="true"
-                android:onClick="onRadioButtonClicked"
+                android:onClick="eventsOnButtons"
                 android:text="Playa" />
 
 
@@ -88,11 +88,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Montaña"
-                android:onClick="onRadioButtonClicked"
+                android:onClick="eventsOnButtons"
 
                 />
 
-
+            <CheckBox
+                android:id="@+id/cbCancelable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/cb_custom"
+                android:buttonTint="@color/orange"
+                android:onClick="eventsOnButtons"
+                android:text="Reserva cancelable" />
 
 
         </RadioGroup>
@@ -138,13 +145,60 @@
             android:buttonTint="@color/orange"
             android:text="Seguro de viaje"
             android:enabled="false"
+            android:onClick="eventsOnButtons"
             />
-        <CheckBox
-            android:id="@+id/cbCancelable"
+
+        <ToggleButton
+            android:id="@+id/tBNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/orange"
-            android:text="Reserva cancelable"
-            android:button="@drawable/cb_custom"/>
+            android:text=""
+            android:textOn="Sí"
+            android:textOff="No"
+
+            />
+        <ToggleButton
+            android:id="@+id/tBCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tb_custom_bg"
+            android:textOff="@null"
+            android:textOn="@null"
+            />
+
+        <Switch
+            android:id="@+id/sBNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notificar cambios por email"
+            android:layout_margin="10dp"
+            android:thumb="@drawable/baseline_email_24"
+            android:thumbTint="@color/orange"
+            android:trackTint="@color/green"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/sBCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Notificación de cambios"
+            app:showText="true"
+            android:checked="true"
+            android:thumb="@drawable/sw_thumb"
+            app:track="@drawable/sw_track"
+            android:textOff="Off"
+            android:textOn="On"
+           />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_airplane"
+            android:layout_margin="30dp"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/orange"/>
     </LinearLayout>
+
 </ScrollView>
