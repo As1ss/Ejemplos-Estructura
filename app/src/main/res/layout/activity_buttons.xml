@@ -32,6 +32,7 @@
         <com.google.android.material.chip.ChipGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/cg_condiciones"
 
             >
 
@@ -64,6 +65,86 @@
 
         </com.google.android.material.chip.ChipGroup>
 
+        <RadioGroup
+            android:id="@+id/rGVacaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
+            <RadioButton
+                android:id="@+id/rBPlaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="Playa" />
+
+
+
+            <RadioButton
+                android:id="@+id/rBMontaña"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montaña"
+                android:onClick="onRadioButtonClicked"
+
+                />
+
+
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rGIconos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rBAirPlane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:background="@drawable/rb_airplane_bg"
+                android:button="@null"
+              />
+
+
+            <RadioButton
+                android:id="@+id/rBCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_car_bg"
+                android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/rBTrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rb_train_bg"
+                android:button="@null"/>
+
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cBSeguro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/orange"
+            android:text="Seguro de viaje"
+            android:enabled="false"
+            />
+        <CheckBox
+            android:id="@+id/cbCancelable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/orange"
+            android:text="Reserva cancelable"
+            android:button="@drawable/cb_custom"/>
     </LinearLayout>
 </ScrollView>
