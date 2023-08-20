@@ -1,6 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/videoViewLocal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            />
+
+        <VideoView
+            android:id="@+id/videoViewWeb"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="@color/orange"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            tools:ignore="WebViewLayout"
+          />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:src="@drawable/illidan" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Circular"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircularWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeWidth="5dp"
+            app:strokeColor="@color/orange"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivRoundedSquare"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Square"
+          />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivRoundedSquareWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/Square"
+            app:strokeWidth="5dp"
+            app:strokeColor="@color/blue_dark"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCornerCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CornerCut"
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCornerCutWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CornerCut"
+            app:strokeColor="@color/purple"
+            app:strokeWidth="5dp"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivDiamondCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/DiamondCut"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivDiamondCutWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/DiamondCut"
+            app:strokeWidth="5dp"
+            app:strokeColor="@color/purple"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCustomCornerCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CustomCornerCut"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCustomCornerCutWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CustomCornerCut"
+            app:strokeColor="@color/pink"
+            app:strokeWidth="5dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCustomCornerRounded"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CustomCornerRounded"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCustomCornerRoundedwWithStroke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/shapeable_image"
+            app:shapeAppearanceOverlay="@style/CustomCornerRounded"
+            app:strokeWidth="5dp"
+            app:strokeColor="@color/green"/>
+
+
+    </LinearLayout>
 
 </ScrollView>

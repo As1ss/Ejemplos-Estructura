@@ -115,6 +115,7 @@ class Buttons : AppCompatActivity() {
             } else Toast.makeText(this, "Switch Desactivadolf", Toast.LENGTH_SHORT).show()
         }
 
+        //Instanciamos el objeto FloatingActionButton y creamos un evento
         val fabButton= findViewById<FloatingActionButton>(R.id.fabButton)
         fabButton.setOnClickListener{
             Toast.makeText(this,"Floating Action Button presionado",Toast.LENGTH_SHORT).show()
