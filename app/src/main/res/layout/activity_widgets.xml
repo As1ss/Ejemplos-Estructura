@@ -9,24 +9,163 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ProgressBar
+            android:id="@+id/pBCircularMedium"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/pBCircularSmall"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/pBCircularLarge"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/pBHorizontalIndeterminate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/green"/>
+        <ProgressBar
+            android:id="@+id/pBHorizontalDeterminate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="300"
+            android:progress="100"
+            android:progressBackgroundTint="@color/purple"
+            android:progressTint="@color/orange"/>
+        <ProgressBar
+            android:id="@+id/pBSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="300"
+            android:progress="100"
+            android:secondaryProgress="150"
+            android:progressBackgroundTint="@color/purple"
+            android:progressTint="@color/orange"
+            android:secondaryProgressTint="@color/pink"/>
+
+        <SeekBar
+            android:id="@+id/sBNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="20"
+            android:max="100"/>
+        <SeekBar
+            android:id="@+id/sBCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/purple"
+            android:progressTint="@color/green"
+            android:progressBackgroundTint="@color/blue_dark"
+            android:thumb="@drawable/ic_train"
+            android:progress="40"
+            android:max="100"/>
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="3" />
+
+        <CalendarView
+            android:id="@+id/cVEjemplo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fadeScrollbars="false"
+            />
+
+        <TextView
+            android:id="@+id/textViewCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fecha seleccionada: "/>
+
+        <View
+            android:id="@+id/dividerHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/purple" />
+
+        <View
+            android:id="@+id/dividerVertical"
+            android:layout_width="4dp"
+            android:layout_height="144dp"
+            android:background="@color/red"
+            android:layout_gravity="center"
+
+            />
+        <NumberPicker
+            android:id="@+id/nPEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:solidColor="@color/gray"
+            />
+        <TextView
+            android:id="@+id/tVNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/sBCircular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cs_maintain_equal_circle="true"
+            app:cs_start_angle="-180"
+            app:cs_end_angle="90"
+            app:cs_progress="5"
+            app:cs_max ="100"
+            app:cs_circle_style="round"
+            app:cs_circle_stroke_width="8dp"
+            app:cs_disable_pointer="true"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3.5"
+            android:isIndicator="false"
+            style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+            android:progressBackgroundTint="@color/blue_light"
+            android:stepSize="0.5"
+            android:progressTint="@color/orange"/>
+
+        <TextView
+            android:id="@+id/tVRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.5/5"
+            />
+
+
         <VideoView
             android:id="@+id/videoViewLocal"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            />
+            android:layout_height="250dp" />
 
         <VideoView
             android:id="@+id/videoViewWeb"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:backgroundTint="@color/orange"/>
+            android:backgroundTint="@color/orange" />
 
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="1500dp"
-            tools:ignore="WebViewLayout"
-          />
+            tools:ignore="WebViewLayout" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -141,6 +280,7 @@
             app:shapeAppearanceOverlay="@style/CustomCornerRounded"
             app:strokeWidth="5dp"
             app:strokeColor="@color/green"/>
+
 
 
     </LinearLayout>
