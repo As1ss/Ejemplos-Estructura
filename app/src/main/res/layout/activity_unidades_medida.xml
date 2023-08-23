@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnidadesMedida"
+    android:orientation="vertical">
+
+    <!--
+    La denisdad de pixeles que cabe en una pulgada. Las pantallas de alta densidad
+    tienen más pixeles por pulgada que los de baja densidad
+
+    Un pixel es la menor unidad homogenea de color que forma parte de una imagen digital
+
+    Dp or Dip: pixeles de densidad independiente
+    Son unidades flexibles que se escalan a dimensiones uniformes en cualquier pantalla
+
+
+    Sp: pixeles de escala independiente.,
+    Tienen la misma fucnión que los dp, pero se utilizan para las fuentes.
+    El valor por defecto de un sp es el mismo que el valor por defecto de un dp
+
+    La diferencia principal entre un sp y un dp esque el sp preserva los ajustes del usuario
+    respecto a la fuente.
+    Los usuarios que tengan ajustes para agrandar el texto verán que el tamaó del texto
+    concuerda con sus preferencias.
+
+    mm: Milímetros.
+    Son mílimetros reales sgún el tamaño físico de la pantalla.
+
+    in: Pulgadas.
+    Son pulgadas reales según el tamaño físico de la pantalla.
+
+    pt: Points.
+    Es un 1/72 de una pulgada, según el tamaño físico de la pantalla.
+    -->
+
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Texto con size: 16sp / width: 300dp"
+        android:background="@color/orange"
+        android:textSize="16dp"/>
+
+
+    <TextView
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:text="Texto con width: 300px"
+        android:background="@color/green"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="40mm"
+        android:layout_height="wrap_content"
+        android:text="Texto con width: 40mm"
+        android:background="@color/blue_light"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="2in"
+        android:layout_height="wrap_content"
+        android:text="Texto con width: 2in"
+        android:background="@color/pink"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="72pt"
+        android:layout_height="wrap_content"
+        android:text="Texto con width: 72pt"
+        android:background="@color/gray"
+        android:textSize="16dp"/>
+
+
+
+</LinearLayout>
