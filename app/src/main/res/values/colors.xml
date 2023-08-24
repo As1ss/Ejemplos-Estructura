@@ -12,6 +12,7 @@
     <color name="yellow">#FFFF00</color>
     <color name="blue_dark">#0360bd</color>
     <color name="blue_light">#cce3fb</color>
+    <color name="green_dark">#006400</color>
 
     //Colores abreviados, solo se acepta si todas las parejas son repetidas
 <!--
